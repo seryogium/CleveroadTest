@@ -1,3 +1,4 @@
+// Creating a clockDisplay
 function renderTime() {
   let mydate = new Date();
   let year = mydate.getYear();
@@ -13,7 +14,6 @@ function renderTime() {
   let currentTime = new Date();
   var h = currentTime.getHours();
   var m = currentTime.getMinutes();
-  var s = currentTime.getSeconds();
 
       if(h == 24){
         h = 0;
@@ -29,15 +29,11 @@ function renderTime() {
         m = "0" + m;
       }
 
-      if(s < 10){
-        s = "0" + s;
-      }
-
       let myClock = document.getElementById('clockDisplay');
-      myClock.innerHTML = "<div class='Time'>"+ "Time: " +h+ ':' +m + ": "+s + "<br>" +dayarray[day]+ ' ' +daym+ ' ' +montharray[month]+ " " +year+ "</div>";
+      myClock.innerHTML = "<div class='Time'>"+ "Time: " +h+ ':' +m + "<br>" +dayarray[day]+ ' ' +daym+ ' ' +montharray[month]+ " " +year+ "</div>";
       setTimeout("renderTime()", 1000);
 }
-
+//Creating a map mark for positioning of ISS
 function locationmark() {
   let longlat = document.getElementById('location');
   const proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -54,7 +50,7 @@ function locationmark() {
 
   setTimeout("locationmark()", 5000);
 }
-
+//Creating world map with google maps API
 function initMap() {
   const proxy = 'https://cors-anywhere.herokuapp.com/';
   const locAPI = `${proxy}http://api.open-notify.org/iss-now.json`;
@@ -66,7 +62,7 @@ function initMap() {
     .then(data => {
       console.log(data);
       var myLatLng = {lat: parseFloat(data.iss_position.latitude), lng:  parseFloat(data.iss_position.longitude)};
-
+//Parse float for correct work of type "number"
 
   console.log(myLatLng);
   var map = new google.maps.Map(document.getElementById('marker'), {
@@ -82,7 +78,7 @@ function initMap() {
 })
   setTimeout("initMap()", 5000);
 }
-
+// Creating OnLive Crew List
 function crewinfo() {
   let humans = document.getElementById('sidebar');
   const proxy = 'https://cors-anywhere.herokuapp.com/';
