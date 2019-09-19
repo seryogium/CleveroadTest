@@ -1,0 +1,74 @@
+body {
+  height: 100%;
+  margin: 15px;
+  background: #fba5ad;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.timeSection {
+  background-color: lightblue;
+  border: 2px double darkblue;
+}
+
+.People {
+  border: 2px double black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px; border-radius: 10px;
+  text-align: justify;
+  width: 50%;
+  margin-left: 25%;
+  background: #eaa099;
+  color: black;
+  box-shadow: 0px 2px 0px black;
+}
+
+.Time {
+  height:300px;
+  vertical-align:middle;
+  display:table-cell;
+  width:10%;
+  text-align:center;
+}
+
+.location {
+  height:300px;
+  vertical-align:middle;
+  display:table-cell;
+  width:5%;
+  text-align:center;
+}
+#marker {
+  width:auto;
+  height: 600px;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5px;
+}
+
+#grid > div {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#location {
+  background: #a4c7b0;
+  border: 2px double darkgreen;
+}
+
+#marker {
+  background: lightyellow;
+  border: 2px double darkred;
+}
+
+#sidebar {
+  border: 2px double darkgrey;
+  background: #f3b0d0;
+  font-family: 'Squada One', cursive;
+}
