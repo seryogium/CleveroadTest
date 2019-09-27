@@ -1,22 +1,26 @@
 body {
   height: 100%;
-  margin: 15px;
+  margin: 5px;
   background: #fba5ad;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Squada One', cursive;
 }
 
 
 .timeSection {
+  margin: 5px;
   background-color: lightblue;
   border: 2px double darkblue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  z-index: 2;
 }
 
 .People {
   border: 2px double black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 5px; border-radius: 10px;
-  text-align: justify;
+  text-align: center;
   width: 50%;
   margin-left: 25%;
   background: #eaa099;
@@ -24,20 +28,32 @@ body {
   box-shadow: 0px 2px 0px black;
 }
 
-.Time {
-  height:300px;
+.timeSection {
   vertical-align:middle;
   display:table-cell;
   width:10%;
   text-align:center;
 }
 
-.location {
-  height:300px;
-  vertical-align:middle;
-  display:table-cell;
-  width:5%;
-  text-align:center;
+.coords {
+  vertical-align: middle;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 0;
+  grid-row-end: 1;
+}
+
+.mapping {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-column-end: 3;
+}
+
+.sideText {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 #marker {
   width:auto;
@@ -46,7 +62,7 @@ body {
 
 #grid {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
   grid-gap: 5px;
 }
@@ -55,6 +71,7 @@ body {
   font-size: 24px;
   text-align: center;
   border-radius: 15px;
+  padding: 30px;
 }
 
 #location {
@@ -70,5 +87,7 @@ body {
 #sidebar {
   border: 2px double darkgrey;
   background: #f3b0d0;
-  font-family: 'Squada One', cursive;
+  grid-column-start: 0;
+  grid-column-end: 3;
+  margin-top: 10%;
 }

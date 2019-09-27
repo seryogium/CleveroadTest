@@ -30,7 +30,7 @@ function renderTime() {
       }
 
       let myClock = document.getElementById('clockDisplay');
-      myClock.innerHTML = "<div class='Time'>"+ "Time: " +h+ ':' +m + "<br>" +dayarray[day]+ ' ' +daym+ ' ' +montharray[month]+ " " +year+ "</div>";
+      myClock.innerHTML = "<div>"+ "Time: " +h+ ':' +m + "<br>" +dayarray[day]+ ' ' +daym+ ' ' +montharray[month]+ " " +year+ "</div>";
       setTimeout("renderTime()", 1000);
 }
 //Creating a map mark for positioning of ISS
