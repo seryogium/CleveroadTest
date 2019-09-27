@@ -67,7 +67,8 @@ function initMap() {
   console.log(myLatLng);
   var map = new google.maps.Map(document.getElementById('marker'), {
     zoom: 4,
-    center: myLatLng
+    center: myLatLng,
+    mapTypeId: 'satellite'
   });
 
   var marker = new google.maps.Marker({

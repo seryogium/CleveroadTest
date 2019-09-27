@@ -1,7 +1,7 @@
 body {
   height: 100%;
   margin: 5px;
-  background: #fba5ad;
+  background: #1f355d;
   font-family: 'Squada One', cursive;
 }
 
@@ -9,30 +9,29 @@ body {
 .timeSection {
   margin: 5px;
   background-color: lightblue;
-  border: 2px double darkblue;
+  border: 2px solid #1b2f54;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 0;
-  grid-row-end: 1;
-  z-index: 2;
+  grid-row-start: 3;
+  vertical-align:middle;
+  text-align:center;
 }
 
 .People {
-  border: 2px double black;
+  border: 2px solid #1b2f54;
   grid-gap: 5px; border-radius: 10px;
   text-align: center;
   width: 50%;
   margin-left: 25%;
-  background: #eaa099;
+  background: lightblue;
   color: black;
   box-shadow: 0px 2px 0px black;
 }
 
-.timeSection {
-  vertical-align:middle;
-  display:table-cell;
-  width:10%;
-  text-align:center;
+.People:hover {
+  background: #c2fef7;
+  box-shadow: none;
+  border: 2px inset;
 }
 
 .coords {
@@ -75,18 +74,19 @@ body {
 }
 
 #location {
-  background: #a4c7b0;
-  border: 2px double darkgreen;
+  background: lightblue;
+  color: black;
+  border: 2px solid #1b2f54;
 }
 
 #marker {
-  background: lightyellow;
-  border: 2px double darkred;
+  background: #111e35;
+  border: 2px solid #1b2f54;
 }
 
 #sidebar {
-  border: 2px double darkgrey;
-  background: #f3b0d0;
+  border: 2px solid #1b2f54;
+  background: lightblue;
   grid-column-start: 0;
   grid-column-end: 3;
 }
