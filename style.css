@@ -7,7 +7,6 @@ body {
 
 
 .timeSection {
-  margin: 5px;
   background-color: lightblue;
   border: 2px solid #1b2f54;
   grid-column-start: 1;
